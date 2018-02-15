@@ -12,7 +12,8 @@ server.route('/users')
     })
     .post((req, res) => res.send('Novo usuário'))
     .put((req, res) => res.send('Altera usuário'))
-
+    .delete((req, res) => res.send('Deleta usuário'))
+    
 server.listen(port, function () {
     console.log(`Executando na porta ${port}...`)
 }) 
